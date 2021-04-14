@@ -1,0 +1,116 @@
+#background {
+  background: #0a061c;
+}
+
+#nav-bar {
+  width: 580px;
+  height: 60px;
+  top: 2%;
+  right: 0%;
+  position: absolute;
+}
+#nav-bar a {
+  width: 100px;
+  height: 60px;
+  margin: 0 45px 0 0;
+  text-align: center;
+  line-height: 70px;
+  font-size: 24px;
+  color: white;
+  float: left;
+  position: relative;
+  border-bottom: 2px white solid;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#main .page .logo {
+  margin-left: calc( 50% - 550px );
+  margin-top: 110px;
+  pointer-events: none;
+}
+#main .page .logo img {
+  width: 1100px;
+}
+#main .page .btn-box {
+  margin-top: -75px;
+  margin-left: calc( 50% - 600px );
+  padding-left: 120px;
+}
+#main .page .btn-box .btn {
+  width: 200px;
+  height: 70px;
+  border: 2px white solid;
+  border-radius: 50px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  font-size: 28px;
+  float: left;
+  margin: 0 25px;
+  background: transparent;
+  cursor: pointer;
+}
+#main .page .btn-box .btn:hover {
+  color: black;
+  background: white;
+}
+
+#sp img {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#sp .Sun {
+  top: 60%;
+  left: -35%;
+  width: 80%;
+  transform: rotate(20deg);
+}
+#sp .Mercury {
+  top: 90%;
+  left: 5%;
+  width: 10%;
+}
+#sp .Venus {
+  top: 90%;
+  left: 12%;
+  width: 15%;
+}
+#sp .Earth {
+  top: 85%;
+  left: 20%;
+  width: 19%;
+}
+#sp .Mars {
+  top: 90%;
+  left: 33%;
+  width: 13%;
+}
+#sp .Jupiter {
+  top: 75%;
+  left: 42%;
+  width: 30%;
+}
+#sp .Saturn {
+  top: 70%;
+  left: 50%;
+  width: 44%;
+  z-index: 10;
+  transform: rotate(-20deg);
+}
+#sp .Uranus {
+  top: 87%;
+  left: 74%;
+  width: 20%;
+}
+#sp .Neptune {
+  top: 75%;
+  left: 87%;
+  width: 20%;
+}
