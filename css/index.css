@@ -5,18 +5,19 @@
 #nav-bar {
   width: 580px;
   height: 60px;
-  top: 2%;
-  right: 0%;
+  top: 0%;
+  right: 70px;
   position: absolute;
   z-index: 999;
 }
 #nav-bar .btn {
   width: 100px;
-  height: 60px;
+  height: 62px;
   margin: 0 45px 0 0;
   text-align: center;
-  line-height: 70px;
+  line-height: 95px;
   font-size: 24px;
+  font-weight: 600;
   color: #e6e6e6;
   float: left;
   position: relative;
@@ -66,9 +67,12 @@
   background: white;
 }
 #main .animation {
-  width: calc( 100% - 220px );
-  height: calc( 100% - 170px );
-  border: 110px #e6e6e6 solid;
+  width: calc( 100% - 140px );
+  height: calc( 100% - 155px );
+  border-top: 95px #e6e6e6 solid;
+  border-right: 70px #e6e6e6 solid;
+  border-bottom: 110px #e6e6e6 solid;
+  border-left: 70px #e6e6e6 solid;
   pointer-events: none;
   display: none;
 }
@@ -97,7 +101,7 @@
 }
 #main .animation .btn-box .btn:active {
   background: #5c5c5c;
-  color: #c4c4c4;
+  color: #e6e6e6;
 }
 #main .animation .video-box .yt-lazyload {
   width: 75%;
@@ -115,9 +119,12 @@
   display: block;
 }
 #main .manga {
-  width: calc( 100% - 220px );
-  height: calc( 100% - 170px );
-  border: 110px #e6e6e6 solid;
+  width: calc( 100% - 140px );
+  height: calc( 100% - 155px );
+  border-top: 95px #e6e6e6 solid;
+  border-right: 70px #e6e6e6 solid;
+  border-bottom: 110px #e6e6e6 solid;
+  border-left: 70px #e6e6e6 solid;
   pointer-events: none;
   display: none;
 }
@@ -149,13 +156,13 @@
 }
 #main .manga .btn-box .btn:active {
   background: #5c5c5c;
-  color: #c4c4c4;
+  color: #e6e6e6;
 }
 #main .manga .manga-box .mangaP {
   width: 75%;
   height: 650px;
   position: relative;
-  top: -425px;
+  top: -431px;
   right: 75px;
   float: right;
   cursor: pointer;
@@ -170,25 +177,36 @@
 }
 #main .manga .manga-box .mangaP h2 {
   width: 100%;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 75px;
+  margin-left: 100px;
   font-size: 36px;
   color: white;
 }
 #main .manga .manga-box .mangaP .text {
   margin-top: 50px;
+  margin-left: 100px;
   line-height: 12px;
 }
 #main .manga .manga-box .mangaP .text p {
   width: 100%;
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 2px;
   font-size: 28px;
   color: white;
 }
 #main .manga .manga-box .mangaP .text span {
   font-size: 32px;
   color: yellow;
+}
+#main .about {
+  width: calc( 100% - 140px );
+  height: calc( 100% - 155px );
+  border-top: 95px #e6e6e6 solid;
+  border-right: 70px #e6e6e6 solid;
+  border-bottom: 110px #e6e6e6 solid;
+  border-left: 70px #e6e6e6 solid;
+  pointer-events: none;
+  display: none;
 }
 
 #sp img {
