@@ -3,7 +3,13 @@ html
   head
     meta(charset='UTF-8')
     title 星伙聊原 | 首頁
-    script(type="text/javascript", src="../odercards.js")
+    //- JS
+    script(type="text/javascript", src="../Javascript/yt-lazyload.js")
+    script(type="text/javascript", src="../Javascript/odercards.js")
+    script(type="text/javascript", src="../Javascript/move.js")
+    script(type="text/javascript", src="../Javascript/index.js")
+    //- CSS
+    link(type="text/css", rel="stylesheet", href="../css/yt-lazyload.css")
     link(type="text/css", rel="stylesheet", href="../css/base.css")
     link(type="text/css", rel="stylesheet", href="../css/index.css")
     link(type="text/css", rel="stylesheet", href="../css/fluid.css")
@@ -137,16 +143,17 @@ html
 
     #nav-bar
       a(href="#")
-        p.B-page 首頁
+        p.btn 首頁
       a(href="#")
-        p.B-animation 教學動畫
+        p.btn 教學動畫
       a(href="#")
-        p.B-manga 主題漫畫
+        p.btn 主題漫畫
       a(href="#")
-        p.B-about 製作團隊
+        p.btn 製作團隊
     #social
     #main
-      .page
+      //- 內容1
+      .page.content
         .logo
           img(src="../img/c-font3.png", alt="星伙聊原Logo")
         .btn-box
@@ -154,9 +161,108 @@ html
             p.btn 前導動畫
           a(href="#")
             p.btn 四大主題
-      .animation
-      .manga
-      .about
+      //- 內容2
+      .animation.content
+        .btn-box
+          p.btn.active 最熟悉的夥伴
+            br
+            span 太陽與月亮
+          p.btn 我們的鄰居 
+            br
+            span 八大行星
+          p.btn 太陽系的小頑皮 
+            br
+            span 小行星與彗星
+        .video-box
+          .yt-lazyload(data-id='zGI_1yIv3js' data-thumb='' data-logo='2')
+          .yt-lazyload(data-id='aDoanNM7O_s' data-thumb='' data-logo='2')
+          .yt-lazyload(data-id='Y7ZkO8IBsso' data-thumb='' data-logo='2') 
+      //- 內容3
+      .manga.content
+        .btn-box
+          p.btn.active 太陽.地球.月球
+            br
+            span 天狗食日
+          p.btn 地球.火星.心宿二
+            br
+            span 熒惑守心
+          p.btn 地球.金木水火土
+            br
+            span 五星連珠
+          p.btn 太陽.地球.月球.彗星
+            br
+            span 彗星襲月
+        .manga-box
+          .mangaP
+            h2 第一章: 天狗食日
+            .text
+              p 遠古時期
+              p 人類發現到日蝕的現象
+              p 有些人
+                span 感到害怕
+                |、有些人
+                span 起身對抗
+              p 也有人發揮想像力
+              p 撰寫出精彩的
+                span 傳說故事
+              br
+              p 在這裡，我們要帶您來看一則傳說故事
+              p 從前人們認為發生什麼事件
+              p 才導致了「天狗食日」的現象...
+          .mangaP
+            h2 第二章: 熒惑守心
+            .text
+              p 很久以前
+              p 人類就已經對夜空中的星星進行觀察
+              p 那些位置有規律的會變成
+                span 星座
+              p 而相對於星座
+              p 移動較迅速的亮星
+              p 就會發展出一些
+                span 奇聞軼事
+              br
+              p 在這裡，我們要帶您來看
+                span 天空中閃紅的天體
+              p 跟古代發生的
+                span 什麼事件
+                |有關...
+          .mangaP
+            h2 第三章: 五星連珠
+            .text
+              p 自古以來
+              p 五星連珠都被認為是
+                span 大吉之兆
+              p 歷史上有許多朝代興起
+              p 都伴隨著行星連珠
+              br
+              p 在當時，行星連珠在民間
+                span 扮演
+                |著什麼
+                span 角色
+              p 這個現象又是怎麼發生的...
+          .mangaP
+            h2 第四章: 彗星襲月
+            .text
+              p 彗星
+              p 也被稱作
+                span 掃把星
+                |、孛星等不同的名字
+              p 在漫長的歷史當中
+              p 時不時就會出來露面
+              p 人們對他是既
+                span 陌生
+                |又
+                span 熟悉
+              br
+              p 在戰國時期有一位說客
+              p 把彗星與其他天災事件並列
+              p 並象徵著
+                span 人民的意志
+                |、
+                span 人民的法槌
+                |呢?...
+      //- 內容4
+      .about.content
     #sp
       img.Sun(src="../img/星體/Sun23.png", alt="")
       img.Mercury(src="../img/星體/Mercury1.png", alt="")
@@ -167,10 +273,13 @@ html
       img.Saturn(src="../img/星體/Saturn1.png", alt="")
       img.Uranus(src="../img/星體/Uranus1.png", alt="")
       img.Neptune(src="../img/星體/Neptune2.png", alt="")
+      //- img.ast(src="../img/星體/小行星1.png", alt="")
+      //- img.ast(src="../img/星體/小行星2.png", alt="")
+      //- img.ast(src="../img/星體/小行星3.png", alt="")
 
 
 
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js')
-    script(src='../fluid.js')
-    //- script(src='../noise.js')
+    script(src='../Javascript/fluid.js')
+    script(src='../Javascript/noise.js')

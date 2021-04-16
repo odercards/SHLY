@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>星伙聊原 | 首頁</title>
-    <script type="text/javascript" src="../odercards.js"></script>
+    <script type="text/javascript" src="../Javascript/yt-lazyload.js"></script>
+    <script type="text/javascript" src="../Javascript/odercards.js"></script>
+    <script type="text/javascript" src="../Javascript/move.js"></script>
+    <script type="text/javascript" src="../Javascript/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/yt-lazyload.css">
     <link type="text/css" rel="stylesheet" href="../css/base.css">
     <link type="text/css" rel="stylesheet" href="../css/index.css">
     <link type="text/css" rel="stylesheet" href="../css/fluid.css">
@@ -139,24 +143,95 @@
       </main>
     </div>
     <div id="nav-bar"><a href="#">
-        <p class="B-page">首頁</p></a><a href="#">
-        <p class="B-animation">教學動畫</p></a><a href="#">
-        <p class="B-manga">主題漫畫</p></a><a href="#">
-        <p class="B-about">製作團隊</p></a></div>
+        <p class="btn">首頁</p></a><a href="#">
+        <p class="btn">教學動畫</p></a><a href="#">
+        <p class="btn">主題漫畫</p></a><a href="#">
+        <p class="btn">製作團隊</p></a></div>
     <div id="social"></div>
     <div id="main">
-      <div class="page">
+      <div class="page content">
         <div class="logo"><img src="../img/c-font3.png" alt="星伙聊原Logo"></div>
         <div class="btn-box"><a href="#">
             <p class="btn">前導動畫</p></a><a href="#">
             <p class="btn">四大主題</p></a></div>
       </div>
-      <div class="animation"></div>
-      <div class="manga"></div>
-      <div class="about"></div>
+      <div class="animation content">
+        <div class="btn-box">
+          <p class="btn active">最熟悉的夥伴<br><span>太陽與月亮</span></p>
+          <p class="btn">我們的鄰居 <br><span>八大行星</span></p>
+          <p class="btn">太陽系的小頑皮 <br><span>小行星與彗星</span></p>
+        </div>
+        <div class="video-box">
+          <div class="yt-lazyload" data-id="zGI_1yIv3js" data-thumb="" data-logo="2"></div>
+          <div class="yt-lazyload" data-id="aDoanNM7O_s" data-thumb="" data-logo="2"></div>
+          <div class="yt-lazyload" data-id="Y7ZkO8IBsso" data-thumb="" data-logo="2"> </div>
+        </div>
+      </div>
+      <div class="manga content">
+        <div class="btn-box">
+          <p class="btn active">太陽.地球.月球<br><span>天狗食日</span></p>
+          <p class="btn">地球.火星.心宿二<br><span>熒惑守心</span></p>
+          <p class="btn">地球.金木水火土<br><span>五星連珠</span></p>
+          <p class="btn">太陽.地球.月球.彗星<br><span>彗星襲月</span></p>
+        </div>
+        <div class="manga-box">
+          <div class="mangaP">
+            <h2>第一章: 天狗食日</h2>
+            <div class="text">
+              <p>遠古時期</p>
+              <p>人類發現到日蝕的現象</p>
+              <p>有些人<span>感到害怕</span>、有些人<span>起身對抗</span></p>
+              <p>也有人發揮想像力</p>
+              <p>撰寫出精彩的<span>傳說故事</span></p><br>
+              <p>在這裡，我們要帶您來看一則傳說故事</p>
+              <p>從前人們認為發生什麼事件</p>
+              <p>才導致了「天狗食日」的現象...</p>
+            </div>
+          </div>
+          <div class="mangaP">
+            <h2>第二章: 熒惑守心</h2>
+            <div class="text">
+              <p>很久以前</p>
+              <p>人類就已經對夜空中的星星進行觀察</p>
+              <p>那些位置有規律的會變成<span>星座</span></p>
+              <p>而相對於星座</p>
+              <p>移動較迅速的亮星</p>
+              <p>就會發展出一些<span>奇聞軼事</span></p><br>
+              <p>在這裡，我們要帶您來看<span>天空中閃紅的天體</span></p>
+              <p>跟古代發生的<span>什麼事件</span>有關...</p>
+            </div>
+          </div>
+          <div class="mangaP">
+            <h2>第三章: 五星連珠</h2>
+            <div class="text">
+              <p>自古以來</p>
+              <p>五星連珠都被認為是<span>大吉之兆</span></p>
+              <p>歷史上有許多朝代興起</p>
+              <p>都伴隨著行星連珠</p><br>
+              <p>在當時，行星連珠在民間<span>扮演</span>著什麼<span>角色</span></p>
+              <p>這個現象又是怎麼發生的...</p>
+            </div>
+          </div>
+          <div class="mangaP">
+            <h2>第四章: 彗星襲月</h2>
+            <div class="text">
+              <p>彗星</p>
+              <p>也被稱作<span>掃把星</span>、孛星等不同的名字</p>
+              <p>在漫長的歷史當中</p>
+              <p>時不時就會出來露面</p>
+              <p>人們對他是既<span>陌生</span>又<span>熟悉</span></p><br>
+              <p>在戰國時期有一位說客</p>
+              <p>把彗星與其他天災事件並列</p>
+              <p>並象徵著<span>人民的意志</span>、<span>人民的法槌</span>呢?...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about content"></div>
     </div>
     <div id="sp"><img class="Sun" src="../img/星體/Sun23.png" alt=""><img class="Mercury" src="../img/星體/Mercury1.png" alt=""><img class="Venus" src="../img/星體/Venus1.png" alt=""><img class="Earth" src="../img/星體/Earth2.png" alt=""><img class="Mars" src="../img/星體/Mars1.png" alt=""><img class="Jupiter" src="../img/星體/Jupiter2.png" alt=""><img class="Saturn" src="../img/星體/Saturn1.png" alt=""><img class="Uranus" src="../img/星體/Uranus1.png" alt=""><img class="Neptune" src="../img/星體/Neptune2.png" alt=""></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
-    <script src="../fluid.js"></script>
+    <script src="../Javascript/fluid.js"></script>
+    <script src="../Javascript/noise.js"></script>
   </body>
 </html>

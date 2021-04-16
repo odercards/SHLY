@@ -2,7 +2,7 @@
   padding: 0
   margin: 0
   text-decoration: none
-  user-select: none;
+  user-select: none
 
 html, body, canvas
   margin: 0
@@ -12,3 +12,12 @@ html, body, canvas
   display: block
   background: transparent
   overflow: hidden
+
+//高度坍塌
+.clearfix:after, .clearfix:before
+  content: ""
+  display: block
+  clear: both
+  overflow: hidden
+  visibilitiy: hidden
+  height: 0

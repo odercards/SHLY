@@ -8,18 +8,22 @@
   top: 2%;
   right: 0%;
   position: absolute;
+  z-index: 999;
 }
-#nav-bar a {
+#nav-bar .btn {
   width: 100px;
   height: 60px;
   margin: 0 45px 0 0;
   text-align: center;
   line-height: 70px;
   font-size: 24px;
-  color: white;
+  color: #e6e6e6;
   float: left;
   position: relative;
-  border-bottom: 2px white solid;
+  cursor: pointer;
+}
+#nav-bar .btn:hover {
+  border-bottom: 3px #0d71b5 solid;
 }
 
 #main {
@@ -28,11 +32,11 @@
   top: 0;
   left: 0;
   position: absolute;
+  pointer-events: none;
 }
 #main .page .logo {
   margin-left: calc( 50% - 550px );
-  margin-top: 110px;
-  pointer-events: none;
+  margin-top: 120px;
 }
 #main .page .logo img {
   width: 1100px;
@@ -55,10 +59,136 @@
   margin: 0 25px;
   background: transparent;
   cursor: pointer;
+  pointer-events: auto;
 }
 #main .page .btn-box .btn:hover {
   color: black;
   background: white;
+}
+#main .animation {
+  width: calc( 100% - 220px );
+  height: calc( 100% - 170px );
+  border: 110px #e6e6e6 solid;
+  pointer-events: none;
+  display: none;
+}
+#main .animation .btn-box .btn.active {
+  background: white;
+  color: black;
+  font-weight: 1000;
+}
+#main .animation .btn-box .btn {
+  width: 200px;
+  height: 70px;
+  border: 2px #e6e6e6 solid;
+  border-radius: 0 50px 50px 0;
+  color: #e6e6e6;
+  line-height: 30px;
+  text-align: left;
+  font-size: 16px;
+  margin: 50px 25px;
+  padding: 7px 0 0 20px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+#main .animation .btn-box .btn span {
+  font-size: 26px;
+}
+#main .animation .btn-box .btn:active {
+  background: #5c5c5c;
+  color: #c4c4c4;
+}
+#main .animation .video-box .yt-lazyload {
+  width: 75%;
+  height: 650px;
+  top: -400px;
+  right: 75px;
+  float: right;
+  cursor: pointer;
+  pointer-events: auto;
+  border: #e6e6e6 5px solid;
+  z-index: 900;
+  display: none;
+}
+#main .animation .video-box .yt-lazyload:nth-child(1) {
+  display: block;
+}
+#main .manga {
+  width: calc( 100% - 220px );
+  height: calc( 100% - 170px );
+  border: 110px #e6e6e6 solid;
+  pointer-events: none;
+  display: none;
+}
+#main .manga .btn-box .btn.active {
+  background: white;
+  color: black;
+  font-weight: 1000;
+}
+#main .manga .btn-box .btn {
+  width: 200px;
+  height: 70px;
+  border: 2px #e6e6e6 solid;
+  border-radius: 0 50px 50px 0;
+  color: #e6e6e6;
+  line-height: 30px;
+  text-align: left;
+  font-size: 16px;
+  margin: 25px 25px;
+  padding: 7px 0 0 20px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+#main .manga .btn-box .btn:first-child {
+  margin-top: 50px;
+}
+#main .manga .btn-box .btn span {
+  font-size: 26px;
+}
+#main .manga .btn-box .btn:active {
+  background: #5c5c5c;
+  color: #c4c4c4;
+}
+#main .manga .manga-box .mangaP {
+  width: 75%;
+  height: 650px;
+  position: relative;
+  top: -425px;
+  right: 75px;
+  float: right;
+  cursor: pointer;
+  background: #0a061c;
+  pointer-events: auto;
+  border: #e6e6e6 5px solid;
+  z-index: 900;
+  display: none;
+}
+#main .manga .manga-box .mangaP:nth-child(1) {
+  display: block;
+}
+#main .manga .manga-box .mangaP h2 {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 36px;
+  color: white;
+}
+#main .manga .manga-box .mangaP .text {
+  margin-top: 50px;
+  line-height: 12px;
+}
+#main .manga .manga-box .mangaP .text p {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 28px;
+  color: white;
+}
+#main .manga .manga-box .mangaP .text span {
+  font-size: 32px;
+  color: yellow;
 }
 
 #sp img {
@@ -113,4 +243,19 @@
   top: 75%;
   left: 87%;
   width: 20%;
+}
+#sp .ast {
+  width: 5%;
+}
+#sp .ast:nth-child(1n) {
+  top: 15%;
+  left: 5%;
+}
+#sp .ast:nth-child(2n) {
+  top: 10%;
+  left: 10%;
+}
+#sp .ast:nth-child(3n) {
+  top: 22%;
+  left: 11%;
 }

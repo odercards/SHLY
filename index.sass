@@ -7,17 +7,20 @@
   top: 2%
   right: 0%
   position: absolute
-  a
+  z-index: 999
+  .btn
     width: 100px
     height: 60px
     margin: 0 45px 0 0
     text-align: center
     line-height: 70px
     font-size: 24px
-    color: white
+    color: #e6e6e6
     float: left
     position: relative
-    border-bottom: 2px white solid
+    cursor: pointer
+    &:hover
+      border-bottom: 3px #0d71b5 solid
 
 
 #main
@@ -26,18 +29,20 @@
   top: 0
   left: 0
   position: absolute
+  pointer-events: none
+
+  // 首頁跳轉
   .page
+    // display: none
     .logo 
       margin-left: calc( 50% - 550px )
-      margin-top: 110px
-      pointer-events: none
+      margin-top: 120px
       img
         width: 1100px
     .btn-box
       margin-top: -75px
       margin-left: calc( 50% - 600px )
       padding-left: 120px
-      
       .btn
         width: 180px
         height: 65px
@@ -51,9 +56,130 @@
         margin: 0 25px
         background: transparent
         cursor: pointer
+        pointer-events: auto
         &:hover
           color: black
           background: white
+
+  // 動畫跳轉
+  .animation
+    width: calc( 100% - 220px )
+    height: calc( 100% - 170px )
+    border: 110px #e6e6e6 solid
+    pointer-events: none
+    display: none
+    .btn-box
+      .btn.active
+        background: white
+        color: black
+        font-weight: 1000
+      .btn
+        width: 200px
+        height: 70px
+        border: 2px #e6e6e6 solid
+        border-radius: 0 50px 50px 0
+        color: #e6e6e6
+        line-height: 30px
+        text-align: left
+        font-size: 16px
+        margin: 50px 25px
+        padding: 7px 0 0 20px
+        background: transparent
+        cursor: pointer
+        pointer-events: auto
+        span 
+          font-size: 26px
+        &:active
+          background: #5c5c5c
+          color: #c4c4c4
+    .video-box
+      .yt-lazyload
+        width: 75%
+        height: 650px
+        top: -400px
+        right: 75px
+        float: right
+        cursor: pointer
+        pointer-events: auto
+        border: #e6e6e6 5px solid
+        z-index: 900
+        display: none
+        &:nth-child(1)
+          display: block
+
+  // 漫畫跳轉
+  .manga
+    width: calc( 100% - 220px )
+    height: calc( 100% - 170px )
+    border: 110px #e6e6e6 solid
+    pointer-events: none
+    display: none
+    .btn-box
+      .btn.active
+        background: white
+        color: black
+        font-weight: 1000
+      .btn
+        width: 200px
+        height: 70px
+        border: 2px #e6e6e6 solid
+        border-radius: 0 50px 50px 0
+        color: #e6e6e6
+        line-height: 30px
+        text-align: left
+        font-size: 16px
+        margin: 25px 25px
+        padding: 7px 0 0 20px
+        background: transparent
+        cursor: pointer
+        pointer-events: auto
+        &:first-child
+          margin-top: 50px
+        span 
+          font-size: 26px
+        &:active
+          background: #5c5c5c
+          color: #c4c4c4
+    .manga-box
+      .mangaP
+        width: 75%
+        height: 650px
+        position: relative
+        top: -425px
+        right: 75px
+        float: right
+        cursor: pointer
+        background: #0a061c
+        pointer-events: auto
+        border: #e6e6e6 5px solid
+        z-index: 900
+        display: none
+        &:nth-child(1)
+          display: block
+        h2
+          width: 100%
+          margin-top: 50px
+          margin-left: 50px
+          font-size: 36px
+          color: white
+        .text
+          margin-top: 50px
+          // margin-left: 10px
+          line-height: 12px
+          p
+            width: 100%
+            margin-top: 30px
+            margin-left: 50px
+            font-size: 28px
+            color: white
+          span
+            font-size: 32px
+            color: yellow
+
+
+
+
+
 
 
 #sp
@@ -100,3 +226,14 @@
     top: 75%
     left: 87%
     width: 20%
+  .ast
+    width: 5%
+    &:nth-child(1n)
+      top: 15%
+      left: 5%
+    &:nth-child(2n)
+      top: 10%
+      left: 10%
+    &:nth-child(3n)
+      top: 22%
+      left: 11%
