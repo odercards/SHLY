@@ -1,27 +1,333 @@
-doctype html
 html
   head
     meta(charset='UTF-8')
     title 無標題網頁
-    script(type="text/javascript", src="../odercards.js")
     link(type="text/css", rel="stylesheet", href="../css/base.css")
     link(type="text/css", rel="stylesheet", href="../css/SunMoonEarth.css")
     //- cd
     //- pug -w ./ -o ./html -P
   body
+    #nav-bar 
+      a(href="./index.html") 首頁
+      a(href="") 天狗食日
+      a(href="") 熒惑守心
+      a(href="") 五星連珠
+      a(href="") 彗星襲月
+    #back-to-top 
+      p ▲
+      p TOP
+    #side-page-bar
+      .s00.s ▶ P.0 標題
+      .s01.s ▶ P.1 漫畫情境
+      .s02.s ▶ P.2 漫畫情境
+      .s03.s ▶ P.3 漫畫情境
+      .s04.s ▶ P.4 漫畫情境
+      .s05.s ▶ P.5 漫畫情境
+      .s06.s ▶ P.6 漫畫情境
+      .s07.s ▶ P.7 漫畫情境
+      .s08.s ▶ P.8 漫畫情境
+      .s09.s ▶ P.9 原理教學
+      .s10.s ▶ P.10 原理教學
+      .s11.s ▶ P.11 原理教學
+      .s12.s ▶ P.12 原理教學
+      .s13.s ▶ P.13 原理教學
+      .s14.s ▶ P.14 原理教學
+      .s15.s ▶ P.15 原理教學
+      .s16.s ▶ P.16 原理教學
+      .sAA.s ▶ P.A 補充說明
+      .sBB.s ▶ P.B 參考資料
     .head_section
     .main_section
-      .title 
-      .manga 1
-        img.m01(src="../img/天狗/天狗P1.jpg", alt="")
-      .manga 2
-        img.m02(src="../img/天狗/天狗P2.jpg", alt="")
-      .manga.m03 3
-        img.m03(src="../img/天狗/天狗P3.jpg", alt="")
-      .manga.m04 4
-        img.m04(src="../img/天狗/天狗P4.jpg", alt="")
-      .manga.m05 5
-        img.m05(src="../img/天狗/天狗P5.jpg", alt="")
+
+      //- 第一頁
+      .manga
+        .manga-text
+          .tri
+          h2 1
+          p 故事的起源是印度的佛經故事，其主角為釋迦摩尼的弟子目連。本篇故事在唐朝傳入中國後，產生了許多變種，這次所採用的是宋代廣為流傳的版本。
+        .manga-text.text02
+          .tri
+          h2 2
+          p 故事的背景設定在漢朝，講述此時漢朝佛寺所需遵循的規矩，而主角特地來寺廟內通知什麼事，究竟發生了什麼事呢...?
+        img.m01(src="../img/天狗食日/天狗P1.jpg", alt="")
+        .Bbox.m01
+          img.m01(src="../img/放大鏡.png", alt="")
+          .m01 　大圖
+        .Hbox.m01
+          img.m01(src="../img/燈泡.png", alt="")
+          .m01 　提示
+
+      //- 第二頁
+      .manga
+        .manga-text
+          .tri
+          h2 3
+          p 雖然漫畫故事中，目蓮的母親要送肉包子去給佛寺中的和尚，但其實當時的包子並不叫「包子」，而是類似「饅頭」的讀法。
+          p 
+            br
+            br
+            | 所以人們去到店裡面想吃有餡的包子就得說:「我要一個有餡的饅頭」，直到唐宋甚至到明朝，包子和饅頭才正式被分開稱呼，變成我們現在習慣的樣子。
+        img.m02(src="../img/天狗食日/天狗P2.jpg", alt="")
+        .Bbox.m02
+          img.m02(src="../img/放大鏡.png", alt="")
+          .m02 　大圖
+        .Hbox.m02
+          img.m02(src="../img/燈泡.png", alt="")
+          .m02 　提示
+
+      //- 第三頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m03(src="../img/天狗食日/天狗P3.jpg", alt="")
+        .Bbox.m03
+          img.m03(src="../img/放大鏡.png", alt="")
+          .m03 　大圖
+        .Hbox.m03
+          img.m03(src="../img/燈泡.png", alt="")
+          .m03 　提示
+      
+      //- 第四頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m04(src="../img/天狗食日/天狗P4.jpg", alt="")
+        .Bbox.m04
+          img.m04(src="../img/放大鏡.png", alt="")
+          .m04 　大圖
+        .Hbox.m04
+          img.m04(src="../img/燈泡.png", alt="")
+          .m04 　提示
+      
+      //- 第五頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m05(src="../img/天狗食日/天狗P5.jpg", alt="")
+        .Bbox.m05
+          img.m05(src="../img/放大鏡.png", alt="")
+          .m05 　大圖
+        .Hbox.m05
+          img.m05(src="../img/燈泡.png", alt="")
+          .m05 　提示
+      
+      //- 第六頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m06(src="../img/天狗食日/天狗P6.jpg", alt="")
+        .Bbox.m06
+          img.m06(src="../img/放大鏡.png", alt="")
+          .m06 　大圖
+        .Hbox.m06
+          img.m06(src="../img/燈泡.png", alt="")
+          .m06 　提示
+      
+      //- 第七頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m07(src="../img/天狗食日/天狗P7.jpg", alt="")
+        .Bbox.m07
+          img.m07(src="../img/放大鏡.png", alt="")
+          .m07 　大圖
+        .Hbox.m07
+          img.m07(src="../img/燈泡.png", alt="")
+          .m07 　提示
+      
+      //- 第八頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m08(src="../img/天狗食日/天狗P8.jpg", alt="")
+        .Bbox.m08
+          img.m08(src="../img/放大鏡.png", alt="")
+          .m08 　大圖
+        .Hbox.m08
+          img.m08(src="../img/燈泡.png", alt="")
+          .m08 　提示
+      
+      //- 第九頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m09(src="../img/天狗食日/天狗P9.jpg", alt="")
+        .Bbox.m09
+          img.m09(src="../img/放大鏡.png", alt="")
+          .m09 　大圖
+        .Hbox.m09
+          img.m09(src="../img/燈泡.png", alt="")
+          .m09 　提示
+      
+      //- 第十頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m10(src="../img/天狗食日/天狗P10.jpg", alt="")
+        .Bbox.m10
+          img.m10(src="../img/放大鏡.png", alt="")
+          .m10 　大圖
+        .Hbox.m10
+          img.m10(src="../img/燈泡.png", alt="")
+          .m10 　提示
+      
+      //- 第十一頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m11(src="../img/天狗食日/天狗P11.jpg", alt="")
+        .Bbox.m11
+          img.m11(src="../img/放大鏡.png", alt="")
+          .m11 　大圖
+        .Hbox.m11
+          img.m11(src="../img/燈泡.png", alt="")
+          .m11 　提示
+      
+      //- 第十二頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m12(src="../img/天狗食日/天狗P12.jpg", alt="")
+        .Bbox.m12
+          img.m12(src="../img/放大鏡.png", alt="")
+          .m12 　大圖
+        .Hbox.m12
+          img.m12(src="../img/燈泡.png", alt="")
+          .m12 　提示
+      
+      //- 第十三頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m13(src="../img/天狗食日/天狗P13.jpg", alt="")
+        .Bbox.m13
+          img.m13(src="../img/放大鏡.png", alt="")
+          .m13 　大圖
+        .Hbox.m13
+          img.m13(src="../img/燈泡.png", alt="")
+          .m13 　提示
+      
+      //- 第十四頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m14(src="../img/天狗食日/天狗P14.jpg", alt="")
+        .Bbox.m14
+          img.m14(src="../img/放大鏡.png", alt="")
+          .m14 　大圖
+        .Hbox.m14
+          img.m14(src="../img/燈泡.png", alt="")
+          .m14 　提示
+      
+      //- 第十五頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m15(src="../img/天狗食日/天狗P15.jpg", alt="")
+        .Bbox.m15
+          img.m15(src="../img/放大鏡.png", alt="")
+          .m15 　大圖
+        .Hbox.m15
+          img.m15(src="../img/燈泡.png", alt="")
+          .m15 　提示
+      
+      //- 第十六頁
+      .manga
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        .manga-text
+          h2 Title 
+          p 123456789
+          p 123456789
+        img.m16(src="../img/天狗食日/天狗P16.jpg", alt="")
+        .Bbox.m16
+          img.m16(src="../img/放大鏡.png", alt="")
+          .m16 　大圖
+        .Hbox.m16
+          img.m16(src="../img/燈泡.png", alt="")
+          .m16 　提示
+      
+      
     .bottom_section
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-  script(src='../fade.js')
+  script(src='../Javascript/fade.js')

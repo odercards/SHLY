@@ -23,3 +23,81 @@ html, body, canvas {
   visibilitiy: hidden;
   height: 0;
 }
+
+#nav-bar {
+  width: 730px;
+  height: 60px;
+  top: 0%;
+  right: 70px;
+  position: fixed;
+  z-index: 999;
+}
+#nav-bar .btn {
+  width: 100px;
+  height: 62px;
+  margin: 0 45px 0 0;
+  text-align: center;
+  line-height: 95px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e6e6e6;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#nav-bar .btn:hover {
+  border-bottom: 3px #0d71b5 solid;
+}
+#nav-bar a {
+  width: 100px;
+  height: 62px;
+  margin: 0 45px 0 0;
+  text-align: center;
+  line-height: 95px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e6e6e6;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#nav-bar a:hover {
+  border-bottom: 3px #0d71b5 solid;
+}
+
+#back-to-top {
+  position: fixed;
+  width: 135px;
+  height: 135px;
+  top: 80%;
+  right: -60px;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+#back-to-top p {
+  margin-left: 15px;
+  width: 50px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+#back-to-top p:first-child {
+  margin-top: 35px;
+}
+
+#side-page-bar {
+  position: fixed;
+  width: 10px;
+  height: 95%;
+  top: 2.5%;
+  left: 1.5%;
+  background: yellow;
+}
+#side-page-bar .s {
+  width: 150px;
+  margin-top: 21px;
+  margin-left: 15px;
+  opacity: 0;
+  font-size: 18px;
+  color: white;
+}
