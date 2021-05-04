@@ -25,10 +25,10 @@ html, body, canvas {
 }
 
 #nav-bar {
-  width: 730px;
+  width: 630px;
   height: 60px;
-  top: 0%;
-  right: 70px;
+  top: 15px;
+  right: 0px;
   position: fixed;
   z-index: 999;
 }
@@ -71,11 +71,19 @@ html, body, canvas {
   height: 135px;
   top: 80%;
   right: -60px;
+  background: transparent;
   border-radius: 50%;
   border: white 2px solid;
+  z-index: 900;
+}
+#back-to-top:hover {
+  background: white;
+}
+#back-to-top:hover p {
+  color: #10092e;
 }
 #back-to-top p {
-  margin-left: 15px;
+  margin-left: 18px;
   width: 50px;
   text-align: center;
   color: white;
@@ -83,21 +91,4 @@ html, body, canvas {
 }
 #back-to-top p:first-child {
   margin-top: 35px;
-}
-
-#side-page-bar {
-  position: fixed;
-  width: 10px;
-  height: 95%;
-  top: 2.5%;
-  left: 1.5%;
-  background: yellow;
-}
-#side-page-bar .s {
-  width: 150px;
-  margin-top: 21px;
-  margin-left: 15px;
-  opacity: 0;
-  font-size: 18px;
-  color: white;
 }
