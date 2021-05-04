@@ -23,3 +23,72 @@ html, body, canvas {
   visibilitiy: hidden;
   height: 0;
 }
+
+#nav-bar {
+  width: 630px;
+  height: 60px;
+  top: 15px;
+  right: 0px;
+  position: fixed;
+  z-index: 999;
+}
+#nav-bar .btn {
+  width: 100px;
+  height: 62px;
+  margin: 0 45px 0 0;
+  text-align: center;
+  line-height: 95px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e6e6e6;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#nav-bar .btn:hover {
+  border-bottom: 3px #0d71b5 solid;
+}
+#nav-bar a {
+  width: 100px;
+  height: 62px;
+  margin: 0 45px 0 0;
+  text-align: center;
+  line-height: 95px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e6e6e6;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#nav-bar a:hover {
+  border-bottom: 3px #0d71b5 solid;
+}
+
+#back-to-top {
+  position: fixed;
+  width: 135px;
+  height: 135px;
+  top: 80%;
+  right: -60px;
+  background: transparent;
+  border-radius: 50%;
+  border: white 2px solid;
+  z-index: 900;
+}
+#back-to-top:hover {
+  background: white;
+}
+#back-to-top:hover p {
+  color: #10092e;
+}
+#back-to-top p {
+  margin-left: 18px;
+  width: 50px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+#back-to-top p:first-child {
+  margin-top: 35px;
+}

@@ -1,6 +1,10 @@
 function index(){
   // 導航列切換
   var oMain = document.getElementById('main');
+  var oBtnBox = oMain.getElementsByClassName('btn-box')[0];
+  var bLeft = oBtnBox.getElementsByClassName('btn')[0];
+  var bRight = oBtnBox.getElementsByClassName('btn')[1];
+
 
   for(var i=0; i<4; i++){
     var oNavBar = document.getElementById('nav-bar');
@@ -9,15 +13,28 @@ function index(){
 
     bNavBtn.index = i;
 
-    bNavBtn.onclick = function(){
-      oContent = oMain.getElementsByClassName('content');
+    oContent = oMain.getElementsByClassName('content');
+
+    bLeft.onclick = function(){
       for(var j=0; j<4; j++){
         oContent[j].style.display = 'none';
-        if(this.index == 0){
-          bNavC[j].style.color = 'white';
-        }else{ 
-          bNavC[j].style.color = 'black';
-        }
+      }
+      oContent[1].style.display = 'block'
+    }
+    bRight.onclick = function(){
+      for(var j=0; j<4; j++){
+        oContent[j].style.display = 'none';
+      }
+      oContent[2].style.display = 'block'
+    }
+    bNavBtn.onclick = function(){
+      for(var j=0; j<4; j++){
+        oContent[j].style.display = 'none';
+        // if(this.index == 0){
+        //   bNavC[j].style.color = 'white';
+        // }else{ 
+        //   bNavC[j].style.color = 'black';
+        // }
       }
       oContent[this.index].style.display = 'block';
       // startMove(oContent[this.index], {

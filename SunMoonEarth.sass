@@ -1,20 +1,361 @@
+html, body
+  display: inline
+  overflow-x: hidden
+  overflow-y: auto
+  // background: #10092e // #0a061c
+  background: url(../img/1ec6c9d3.png) repeat
+
+#nav-bar
+  width: 820px
+  height: 60px
+  top: 15px
+  right: 0px
+  position: fixed
+  z-index: 999
+
 .head_section
   width: 100%
-  height: 998px
-  border: 1px green solid
-  
+  height: 1100px
+  color: white
+  position: relative
+  h1
+    margin-top: 20%
+    margin-left: 17%
+    font-size: 90px
+    font-weight: 1000
+    text-shadow: 0.1em 0.1em #090909
+  h2
+    width: 500px
+    position: absolute
+    color: #050212
+    font-size: 400px
+    top: -35%
+    left: 200px
+    line-height: 400px
+    z-index: -1
+    font-weight: 500
+  h3
+    position: absolute
+    color: #0d081f
+    font-size: 200px
+    top: 30%
+    left: 630px
+    line-height: 200px
+    z-index: -1
+    font-weight: 500
+  img
+    position: absolute
+    height: 40%
+    top: -230px
+    right: 5%
+    opacity: 0.9
+    z-index: -1
+    box-shadow: 0px 0px 20px 3px #f5f0f5
+  .sentence
+    margin-top: 20px
+    width: 800px
+    margin-left: 17%
+    font-size: 36px
+    text-align: left
+
 .manga
   width: 100%
-  height: 998px
+  height: 1000px
   border: 1px red solid
   position: relative
   font-size: 60px
-  line-height: 998px
-  text-align: center
+  text-align: left
+  .manga-text
+    width: 45%
+    margin-top: 170px
+    margin-left: 50%
+    // border: white 2px solid
+    color: white
+    &.natural
+      margin-top: 120px
+      
+    .tri
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 55px 55px 0 0
+      border-color: #ebfeff transparent transparent transparent
+      // _border-color: #ebfeff #000000 #000000 #000000
+      // _filter: progid: DXImageTransform.Microsoft.Chroma(color='#000000')
+    h2
+      font-size: 60px
+      margin-top: -30px
+      margin-left: 35px
+    p
+      width: 600px
+      font-size: 32px 
+      line-height: 50px
+      margin-top: -60px
+      margin-left: 100px
+      text-shadow: 0.05em 0.05em #444
+  .text02
+    margin-left: 56%
+    p
+      width: 550px
+  .text03
+    margin-left: 53%
   img
-    top: 5%
-    left: 50px
+    top: 2.5%
+    left: 200px
     position: fixed
-    height: 90%
-    border: 1px blue solid
+    height: 95%
     opacity: 0
+  .Bbox
+    position: fixed
+    color: white
+    width: 32px
+    height: 100px
+    top: 72%
+    left: 44.5%
+    font-size: 28px
+    opacity: 0
+    // border: 1px solid red
+    line-height: 32px
+    text-align: center
+    img
+      position: fixed
+      width: 30px
+      height: 30px
+      top: 72%
+      left: calc( 44.5% + 2px )
+  .Hbox
+    position: fixed
+    color: white
+    width: 32px
+    height: 100px
+    top: 85%
+    left: 44.5%
+    font-size: 28px
+    opacity: 0
+    // border: 1px solid yellow
+    line-height: 32px
+    text-align: center
+    img
+      position: fixed
+      width: 30px
+      height: 30px
+      top: 85%
+      left: calc( 44.5% + 2px )
+
+
+#side-page-bar
+  position: fixed
+  width: 10px
+  height: 95%
+  top: 2.5%
+  left: -1.5%
+  background: yellow
+  .sBlock
+    position: absolute
+    width: 50px
+    height: 6.5%
+    border-radius: 0 25px 25px 0
+    background: white
+    &:nth-child(2n)
+      position: absolute
+      top: 6.5%
+      width: 50px
+      height: 41.25%
+      border-radius: 0 25px 25px 0
+      background: #fff4f2
+    &:nth-child(3n)
+      position: absolute
+      top: 47.75%
+      width: 50px
+      height: 41.5%
+      border-radius: 0 25px 25px 0
+      background: #fffaf2
+    &:nth-child(4n)
+      position: absolute
+      top: 89.25%
+      width: 50px
+      height: 5.75%
+      border-radius: 0 25px 25px 0
+      background: #abdbf7
+    &:nth-child(5n)
+      position: absolute
+      top: 95%
+      width: 50px
+      height: 5%
+      border-radius: 0 25px 25px 0
+      background: #a9bbf5
+  .sBlock2
+    position: absolute
+    width: 50px
+    height: 6.5%
+    border-radius: 0 25px 25px 0
+    background: white
+    &:nth-child(2n)
+      position: absolute
+      top: 6.5%
+      width: 50px
+      height: 36%
+      border-radius: 0 25px 25px 0
+      background: #fff4f2
+    &:nth-child(3n)
+      position: absolute
+      top: 42.5%
+      width: 50px
+      height: 43.5%
+      border-radius: 0 25px 25px 0
+      background: #fffaf2
+    &:nth-child(4n)
+      position: absolute
+      top: 86%
+      width: 50px
+      height: 7%
+      border-radius: 0 25px 25px 0
+      background: #abdbf7
+    &:nth-child(5n)
+      position: absolute
+      top: 93%
+      width: 50px
+      height:7%
+      border-radius: 0 25px 25px 0
+      background: #a9bbf5
+  .sBlock3
+    position: absolute
+    width: 50px
+    height: 6.5%
+    border-radius: 0 25px 25px 0
+    background: white
+    &:nth-child(2n)
+      position: absolute
+      top: 6.5%
+      width: 50px
+      height: 35.5%
+      border-radius: 0 25px 25px 0
+      background: #fff4f2
+    &:nth-child(3n)
+      position: absolute
+      top: 42%
+      width: 50px
+      height: 42%
+      border-radius: 0 25px 25px 0
+      background: #fffaf2
+    &:nth-child(4n)
+      position: absolute
+      top: 84%
+      width: 50px
+      height: 8%
+      border-radius: 0 25px 25px 0
+      background: #abdbf7
+    &:nth-child(5n)
+      position: absolute
+      top: 92%
+      width: 50px
+      height: 8%
+      border-radius: 0 25px 25px 0
+      background: #a9bbf5
+  .sBlock4
+    position: absolute
+    width: 50px
+    height: 6.5%
+    border-radius: 0 25px 25px 0
+    background: white
+    &:nth-child(2n)
+      position: absolute
+      top: 6.5%
+      width: 50px
+      height: 41.25%
+      border-radius: 0 25px 25px 0
+      background: #fff4f2
+    &:nth-child(3n)
+      position: absolute
+      top: 47.75%
+      width: 50px
+      height: 41.5%
+      border-radius: 0 25px 25px 0
+      background: #fffaf2
+    &:nth-child(4n)
+      position: absolute
+      top: 89.25%
+      width: 50px
+      height: 5.75%
+      border-radius: 0 25px 25px 0
+      background: #abdbf7
+    &:nth-child(5n)
+      position: absolute
+      top: 95%
+      width: 50px
+      height: 5%
+      border-radius: 0 25px 25px 0
+      background: #a9bbf5
+
+  .s
+    width: 150px
+    margin-bottom: 22px
+    margin-left: 60px
+    opacity: 0
+    font-size: 18px
+    color: #f0f0f0
+    &:nth-child(1n)
+      margin-top: 18px
+  .s2
+    width: 150px
+    margin-bottom: 40px
+    margin-left: 60px
+    opacity: 0
+    font-size: 18px
+    color: #f0f0f0
+    &:nth-child(1n)
+      margin-top: 15px
+  .s3
+    width: 150px
+    margin-bottom: 51px
+    margin-left: 60px
+    opacity: 0
+    font-size: 18px
+    color: #f0f0f0
+    &:nth-child(1n)
+      margin-top: 20px
+  .s4
+    width: 150px
+    margin-bottom: 28px
+    margin-left: 60px
+    opacity: 0
+    font-size: 18px
+    color: #f0f0f0
+    &:nth-child(1n)
+      margin-top: 18px
+
+
+
+.bottom_section
+  width: 50%
+  margin-left: 25%
+  padding: 300px 0 
+  .textbar
+    h2
+      margin: 70px 0 10px
+      color: #f0ebd8                              //中標題顏色
+      font-size: 48px
+      line-height: 52px
+      text-align: left
+      font-weight: 900
+    p
+      margin: 0 20px 0 30px
+      color: #f2f2f2                              //文本顏色 #cdeffa
+      font-size: 28px
+      line-height: 40px
+      font-weight: 500
+      text-shadow: 0.1em 0.1em 0.1em rgba(30, 30, 30, 0.2)
+      // letter-spacing: 0.5px
+      &.p001
+        margin-bottom: 20px
+      span
+        color: #f7daaf                            //文本強化字顏色
+        font-weight: 1000
+        font-size: 32px
+        line-height: 40px
+        text-shadow: 0.1em 0.1em 0.1em rgba(53, 53, 53, 0.3)
+    .ref
+      margin: 0px 70px 30px
+      color: white                                  //引用文字顏色
+      font-size: 20px
+      line-height: 30px
